@@ -1,0 +1,19 @@
+.container-fluid{
+    background-color: #2155CD;
+}
+
+.img-fluid{
+    width: 70%;
+}
+
+.info-pedro{
+    color: white;
+}
+
+.cel{
+    display: inline;
+}
+
+a img{
+    width: 10%;
+}
