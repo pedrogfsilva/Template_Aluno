@@ -1,16 +1,17 @@
-let pedroPhoto = document.getElementsByTagName('img')[0];
-
-pedroPhoto.addEventListener('mouseover', () =>{
-    pedroPhoto.style.width = '100%';
+$('#pedro').on('mouseover', () =>{
+    $('#pedro').css('width', '100%');
 });
 
-pedroPhoto.addEventListener('mouseout', () =>{
-    pedroPhoto.style.width = '70%';
+$('#pedro').on('mouseout', () =>{
+    $('#pedro').css('width', '70%');
 });
 
-// let container = document.getElementsByClassName('container')[0];
-// let row = document.createElement('hr');
+$('h3').on('mouseover', () =>{
+    $('h3').css('color', '#2155CD');
+});
 
-// container.appendChild(row);
+$('h3').on('mouseout', () =>{
+    $('h3').css('color', '#2155CD');
+});
 
 $('#perfil').before('<hr>');
