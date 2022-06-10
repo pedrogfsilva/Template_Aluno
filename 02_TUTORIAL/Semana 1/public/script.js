@@ -15,3 +15,18 @@ $('h3').on('mouseout', () =>{
 });
 
 $('#perfil').before('<hr>');
+
+let ajax = new XMLHttpRequest();
+ajax.open('GET', '/curriculo', true);
+
+ajax.onreadystatechange = () =>{
+    if(ajax.status === 200 && ajax.readyState === 4){
+        let response = JSON.parse(ajax.responseText);
+        console.log(response);
+        $('#firstName').html(response[0].nome);
+        $('#lastName').html(response[0].sobrenome);
+        $('#education').html(response[0].formacao);
+    }
+}
+
+ajax.send();
